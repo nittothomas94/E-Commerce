@@ -1,3 +1,5 @@
-export default function HomePage() {
-  return <h1>Welcome to Home Page</h1>;
-}
+const Dashboard = () => {
+  return <h1>Sign up page</h1>;
+};
+
+export default Dashboard;
