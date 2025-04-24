@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ My E-Commerce App
 
-## Getting Started
+This is a full-stack e-commerce application built with **Next.js App Router** and **MongoDB**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- User & Admin Panel
+- JWT-based Authentication
+- Product Management
+- Responsive Design with Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Folder Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Folder Structure (App Router with Admin & User sections)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+app/
+├── (admin)/ ← Group routes for Admin
+│ ├── layout.jsx ← Admin layout (sidebar, header)
+│ ├── dashboard/
+│ │ └── page.jsx ← /admin/dashboard
+│ ├── login/
+│ │ └── page.jsx ← /admin/login
+│
+├── (user)/ ← Group routes for Users
+│ ├── layout.jsx ← User layout (navbar, footer)
+│ ├── home/
+│ │ └── page.jsx ← /home
+│ ├── cart/
+│ │ └── page.jsx ← /cart
+│ ├── login/
+│ │ └── page.jsx ← /login
+│
+├── layout.jsx ← (Optional) Global layout (used for shared styles)
+└── page.jsx ← Root route `/` (can redirect to login or home)
 
-## Learn More
+# 🧠 What is (admin) and (user)?
 
-To learn more about Next.js, take a look at the following resources:
+These are called route groups in Next.js App Router.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+They help organize your folders without affecting the URL.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+So: /dashboard is shown to users from admin/dashboard/page.jsx, but the (admin) part won’t appear in the URL.
 
-## Deploy on Vercel
+✅ It keeps clean URLs like /dashboard, /login, etc.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Final Result:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Admin login → /admin/login
+
+Admin dashboard → /admin/dashboard
+
+User home → /home
+
+User cart → /cart
+
+Clean & organized folder structure 💪
+
+# Let me know when you're ready and I’ll help you add:
+
+🔐 Route protection (middleware for admin vs user)
+
+🌐 Meta info (SEO)
+
+🎨 Tailwind styling

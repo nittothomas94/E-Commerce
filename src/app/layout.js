@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Footer from './components/Footer/footer';
-import Navbar from './components/Navbar/navbar';
+
+import { redirect } from 'next/navigation';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -19,19 +19,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  redirect('/user/home'); // do the redirect here if needed
+
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>
-          <Navbar />
-        </header>
-
         {children}
-
-        <Footer />
       </body>
     </html>
   );
