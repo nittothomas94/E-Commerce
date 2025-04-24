@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <TopHeader />
-      <div className="h-screen">
+      <div className="h-screen bg-white text-black">
         <h1>Home page</h1>
       </div>
 
