@@ -1,5 +1,5 @@
 const Dashboard = () => {
-  return <h1>Sign up page</h1>;
+  return <h1 className="h-screen">Sign up page</h1>;
 };
 
 export default Dashboard;
