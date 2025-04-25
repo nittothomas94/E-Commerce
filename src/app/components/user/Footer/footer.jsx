@@ -3,7 +3,7 @@ import ResuseableFooterBox from './resuseFooterBox';
 const Footer = () => {
   return (
     <div className="bg-black text-white relative bottom-0 w-full flex flex-col items-start justify-center py-2 lg:items-center">
-      <div className="grid grid-cols-1 gap-8 py-4 px-4 sm:grid-cols-3 sm:px-5 sm:gap-10 md:grid md:grid-cols-4 lg:grid-cols-6 lg:w-[1000px] lg:flex lg:justify-center xl:w-[1100px] xl:gap-20">
+      <div className="grid grid-cols-1 gap-8 py-4 px-4 sm:grid-cols-3 sm:px-5 sm:gap-10 md:grid md:grid-cols-4 lg:grid-cols-6 lg:w-[1000px] lg:flex lg:justify-center xl:w-[1100px] xl:gap-35">
         <div className="flex flex-col gap-2">
           <h1 className="text-[28px] font-bold">Exclusive</h1>
           <h2 className="text-[25px] font-bold">Subscribe</h2>

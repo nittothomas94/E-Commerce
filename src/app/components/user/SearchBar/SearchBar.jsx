@@ -9,7 +9,7 @@ const SearchInput = () => {
       placeholder="Search"
       variant="standard"
       size="small"
-      className="bg-gray-100 w-30"
+      className="bg-gray-100 w-30 md:w-35 lg:w-45"
       InputProps={{
         // <-- changed from startAdornment to endAdornment
         endAdornment: (
