@@ -76,7 +76,7 @@ const About = () => {
         </section>
 
         {/* section 2 */}
-        <section className="w-full grid grid-cols-2 gap-2 justify-items-center items-center md:w-[98%] lg:w-[1024px] lg:px-2  lg:pt-10 xl:w-[1100px] sm:grid-cols-3 lg:grid-cols-4">
+        <section className=" border w-full grid grid-cols-2 gap-2 justify-items-center items-center md:w-[98%] lg:w-[1024px] lg:justify-items-start lg:pt-10 xl:w-[1100px] sm:grid-cols-3 lg:grid-cols-4">
           {array.map((item, index) => {
             return (
               <div
@@ -98,7 +98,7 @@ const About = () => {
         </section>
 
         {/* section 4 */}
-        <section className="w-full grid grid-cols-2 gap-2 justify-items-center items-center md:w-[98%] lg:w-[1024px] lg:px-2 xl:w-[1100px] lg:mb-20 sm:grid-cols-3">
+        <section className="w-full grid grid-cols-2 gap-2 justify-items-center items-center md:w-[98%] lg:w-[1024px] lg:justify-items-stretch xl:w-[1100px] lg:mb-20 sm:grid-cols-3">
           {array2.map((item, index) => {
             return (
               <div
