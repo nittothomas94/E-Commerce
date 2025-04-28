@@ -13,6 +13,12 @@ This is a full-stack e-commerce application built with **Next.js App Router** an
 
 # Folder Structure (App Router with Admin & User sections)
 
+public/
+│ ├── images/
+│ │ ├── products/
+│ │ └── founders/
+│ └── favicon.ico
+
 app/
 ├── (admin)/ ← Group routes for Admin
 │ ├── layout.jsx ← Admin layout (sidebar, header)
@@ -30,6 +36,10 @@ app/
 │ ├── login/
 │ │ └── page.jsx ← /login
 │
+├── constants/
+│ ├── products.js ← (Products array here)
+│ └── founders.js ← (Founders array here)
+│  
 ├── layout.jsx ← (Optional) Global layout (used for shared styles)
 └── page.jsx ← Root route `/` (can redirect to login or home)
 
