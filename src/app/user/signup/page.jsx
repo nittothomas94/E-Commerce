@@ -2,7 +2,7 @@ import SignupForm from '@/app/components/user/SignupForm/signForm';
 
 const Signup = () => {
   return (
-    <div className="flex items-center justify-center font-sans lg:justify-start xl:justify-center">
+    <div className="flex items-center justify-center font-sans lg:justify-start xl:justify-center bg-white text-black">
       <div className="w-[84%] md:w-[100%] md:flex lg:w-[90%] lg:h-200 lg:justify-between lg:items-center xl:w-[1250px] xl:justify-center xl:gap-40">
         <img
           src="/images/SandL-img.png"

@@ -1,13 +1,13 @@
 import { FaStar } from 'react-icons/fa6';
 
-const ProductCardHome = ({
+const ProductCard = ({
   name = 'No Name',
   price = 'Not added',
   actualPrice = '1000',
   image = '/images/common/no-image.jpg',
 }) => {
   return (
-    <div className="h-fit border border-red-900 w-47 flex flex-col gap-2 p-[2px] mb-2">
+    <div className="h-fit border border-red-900 w-50 flex flex-col gap-2">
       {/* imgage and icons */}
       <div
         className="w-full h-40 border bg-cover bg-center relative"
@@ -49,4 +49,4 @@ const ProductCardHome = ({
   );
 };
 
-export default ProductCardHome;
+export default ProductCard;

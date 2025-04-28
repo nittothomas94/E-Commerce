@@ -2,6 +2,7 @@
 
 import { TextField, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import { IoSearch } from 'react-icons/io5';
 
 const SearchInput = () => {
   return (
@@ -9,7 +10,7 @@ const SearchInput = () => {
       placeholder="Search"
       variant="standard"
       size="small"
-      className="bg-gray-100 w-30 md:w-35 lg:w-45"
+      className="bg-gray-100 w-30 md:w-35 lg:w-45 rounded-2xl"
       InputProps={{
         // <-- changed from startAdornment to endAdornment
         endAdornment: (
@@ -19,6 +20,11 @@ const SearchInput = () => {
         ),
       }}
     />
+    // <div className="flex items-center justify-between bg-gray-100 w-30 md:w-35 lg:w-45 rounded-2xl">
+    //   <input type="text" />
+    //   {/* <SearchIcon /> */}
+    //   <IoSearch className="text-black" />
+    // </div>
   );
 };
 

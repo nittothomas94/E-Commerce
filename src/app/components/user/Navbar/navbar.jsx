@@ -17,7 +17,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="h-22 border-b-2 border-b-gray-300 flex items-center justify-center lg:w-full">
+    <div className="h-22 border-b-2 border-b-gray-300  bg-white text-black flex items-center justify-center lg:w-full">
       <div className="flex w-full justify-between md:w-[98%] lg:w-[1024px] lg:px-2 xl:w-[1100px]">
         <div className="w-fit flex items-center justify-between md:w-[60%] lg:pr-20">
           <h1 className="text-[25px] font-bold md:text-[28px]">Exclusive</h1>
