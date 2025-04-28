@@ -10,7 +10,7 @@ const ProductDivider = () => {
   const [clickItem, setClickItem] = useState('');
 
   return (
-    <div className="relative lg:px-2 lg:border-r lg:pr-4 lg:border-gray-200">
+    <div className="relative border  lg:px-2 lg:border-r lg:pr-4 lg:border-gray-200">
       <ul
         className="flex justify-between lg:flex-col lg:gap-2 lg:w-50"
         onMouseLeave={() => setClickItem('')}
@@ -85,7 +85,7 @@ const ProductDivider = () => {
           )}
         </li>
 
-        <li>
+        <li className="hidden">
           <button className="flex items-center justify-center p-2 gap-2 text-[13px] min-w-20 lg:w-full lg:justify-between hover:border border-gray-200 cursor-pointer">
             Electronics
           </button>

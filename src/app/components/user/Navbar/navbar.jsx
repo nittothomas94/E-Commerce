@@ -73,8 +73,12 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-6">
           <SearchInput />
           <div className="hidden md:flex gap-5 ">
-            <i className="material-icons">favorite</i>
-            <i className="material-icons">shopping_cart</i>
+            <Link href="/user/wishlist" className="cursor-pointer">
+              <i className="material-icons">favorite</i>
+            </Link>
+            <Link href="/user/cart" className="cursor-pointer">
+              <i className="material-icons">shopping_cart</i>
+            </Link>
             <i
               className={`material-icons ${
                 pathname == '/' ? 'invisible' : 'visible'
