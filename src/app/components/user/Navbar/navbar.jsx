@@ -79,13 +79,15 @@ const Navbar = () => {
             <Link href="/user/cart" className="cursor-pointer">
               <i className="material-icons">shopping_cart</i>
             </Link>
-            <i
-              className={`material-icons ${
-                pathname == '/' ? 'invisible' : 'visible'
-              }`}
-            >
-              person
-            </i>
+            <Link href="/user/account">
+              <i
+                className={`material-icons ${
+                  pathname == '/' ? 'invisible' : 'visible'
+                }`}
+              >
+                person
+              </i>
+            </Link>
           </div>
           <MdMenu className="text-[28px] text-black md:hidden" />
         </div>
