@@ -39,7 +39,7 @@ const CartPage = () => {
   );
 
   return (
-    <div className="w-[90%] mx-auto py-10 font-sans">
+    <div className="w-[90%] mx-auto py-10 font-sans 2xl:w-[1200px]">
       <div className="flex flex-col gap-6 lg:items-start lg:justify-between xl:gap-20">
         <div className="flex-1 flex flex-col gap-4  w-full">
           {/* Column Headings */}
