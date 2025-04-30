@@ -1,73 +1,69 @@
 const Contact = () => {
   return (
-    <div className="min-h-screen w-full xl:flex 2xl:items-center 2xl:justify-center bg-white text-black">
-      <div className="flex flex-col gap-12 mt-5 m-2 lg:w-full border 2xl:w-[1400px] 2xl:gap-18">
-        <p>
-          <span className="text-gray-400">Home / </span>
-          Contact
+    <div className="bg-white text-black min-h-screen w-full py-6 px-4 xl:px-12">
+      <div className="max-w-screen-2xl mx-auto flex flex-col gap-12">
+        <p className="text-gray-500">
+          <span className="text-gray-400">Home / </span>Contact
         </p>
 
-        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:w-[100%]">
-          <div className="flex flex-col gap-10 shadow-sm p-4 lg:h-[480px]">
-            <div className="w-full flex flex-col gap-4">
-              <p className="flex gap-2 items-center text-[20px] font-bold">
+        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between">
+          {/* Left Section - Info */}
+          <div className="flex flex-col gap-10 p-6  rounded-md shadow-sm w-full lg:w-[30%]">
+            <div className="flex flex-col gap-4">
+              <p className="flex items-center gap-3 text-[20px] font-bold">
                 <i className="fa-solid fa-phone bg-red-600 text-white p-3 rounded-full"></i>
                 Call to Us
               </p>
-              <p className="">We are available 24/7, 7 days a week.</p>
+              <p>We are available 24/7, 7 days a week.</p>
               <p>Phone: +8801611112222</p>
             </div>
 
             <hr />
 
-            <div className="w-full flex flex-col gap-4 lg:w-[340] lg:h-[337px]">
-              <p className="flex gap-2 items-center text-[20px] font-bold">
-                <i className="fa-solid fa-phone bg-red-600 text-white p-3 rounded-full"></i>
-                Write To US
+            <div className="flex flex-col gap-4">
+              <p className="flex items-center gap-3 text-[20px] font-bold">
+                <i className="fa-solid fa-envelope bg-red-600 text-white p-3 rounded-full"></i>
+                Write to Us
               </p>
-              <div className="">
-                <p className="text-[17px]">
-                  Fill out our form and we will Contact
-                </p>
-                <p> you within 24 hours.</p>
-              </div>
+              <p className="text-[17px]">
+                Fill out our form and we will contact you within 24 hours.
+              </p>
               <p>Emails: customer@exclusive.com</p>
               <p>Emails: support@exclusive.com</p>
             </div>
           </div>
 
-          {/* Contact Box */}
-
-          <div className="flex lg:w-[100%] lg:h-[480px]">
-            <div className="w-full lg:w-[100%] xl:w-[100%] border p-2 flex flex-col gap-5 relative pb-20 shadow-sm mb-10 md:px-[10%] lg:p-5 xl:p-6">
-              <div className="flex flex-col lg:w-[100%] border gap-5 lg:flex-row lg:justify-between">
+          {/* Right Section - Form */}
+          <div className="w-full lg:w-[65%]">
+            <div className="w-full  p-4 sm:p-6 lg:p-8 rounded-md shadow-sm flex flex-col gap-6">
+              <div className="flex flex-col gap-5 lg:flex-row lg:gap-4">
                 <input
                   type="text"
-                  className="min-w-15 h-25 text-[19px] px-2 bg-gray-200 lg:h-15"
+                  className="w-full h-12 text-base px-4 bg-gray-100 rounded-md"
                   placeholder="Your Name*"
-                ></input>
-
+                />
                 <input
                   type="email"
-                  className="min-w-25 h-12 text-[19px] px-2 bg-gray-200 lg:h-15"
+                  className="w-full h-12 text-base px-4 bg-gray-100 rounded-md"
                   placeholder="Your Email*"
-                ></input>
-
+                />
                 <input
                   type="number"
-                  className="min-w-25 h-12 text-[19px] px-2 bg-gray-200 lg:h-15"
+                  className="w-full h-12 text-base px-4 bg-gray-100 rounded-md"
                   placeholder="Your Number*"
-                ></input>
+                />
               </div>
 
               <textarea
-                className="min-w-25 h-32 bg-gray-200 text-base px-2 py-0 lg:h-60 lg:w-[100%] lg:p-2"
+                className="w-full h-32 lg:h-48 bg-gray-100 text-base px-4 py-2 rounded-md resize-none"
                 placeholder="Your Message"
               ></textarea>
 
-              <button className="bg-red-600 text-white w-fit px-10 py-3 absolute bottom-2 right-2 cursor-pointer rounded-[8px] scale-105 hover:bg-red-800 md:right-[10%]">
-                Send Message
-              </button>
+              <div className="flex justify-end">
+                <button className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition">
+                  Send Message
+                </button>
+              </div>
             </div>
           </div>
         </div>

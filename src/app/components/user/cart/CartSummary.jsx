@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const CartSummary = ({ subtotal }) => {
   return (
     <div className="border p-6 rounded-lg w-full sm:w-[300px] lg:w-[350px]">
@@ -15,9 +17,11 @@ const CartSummary = ({ subtotal }) => {
         <span>Total</span>
         <span>${subtotal}</span>
       </div>
-      <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 cursor-pointer">
-        Checkout
-      </button>
+      <Link href="/user/checkout">
+        <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 cursor-pointer">
+          Checkout
+        </button>
+      </Link>
     </div>
   );
 };
