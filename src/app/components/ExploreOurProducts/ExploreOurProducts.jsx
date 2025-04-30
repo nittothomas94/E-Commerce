@@ -20,7 +20,7 @@ const ExploreOurProducts = () => {
       reviews: 95,
     },
     {
-      image: '/images/home/auus-lap.png',
+      image: '/images/products/auus-lap.png',
       title: 'ASUS FHD Gaming Laptop',
       price: 700,
       oldPrice: null,
@@ -57,7 +57,7 @@ const ExploreOurProducts = () => {
       tag: 'NEW',
     },
     {
-      image: '/images/home/jacket.png',
+      image: '/images/products/jacket.png',
       title: 'Quilted Satin Jacket',
       price: 660,
       oldPrice: null,
