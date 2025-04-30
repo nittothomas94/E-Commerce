@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { MdMenu } from 'react-icons/md'; // Material Design menu icon
-import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import SearchBar from '../Common/SearchBar';
 
 //
 const SearchInput = dynamic(() => import('../SearchBar/SearchBar'), {
@@ -68,10 +68,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* left side of navbar */}
+        {/* right side of navbar */}
 
         <div className="flex items-center justify-center gap-6">
-          <SearchInput />
+          <SearchBar />
           <div className="hidden md:flex gap-5 ">
             <Link href="/user/wishlist" className="cursor-pointer">
               <i className="material-icons">favorite</i>

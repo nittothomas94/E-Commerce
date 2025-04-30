@@ -1,6 +1,7 @@
 'use client';
 
 import ProductCard from '../user/ProductCard/ProductCard';
+import Button from '../user/Button/Button';
 
 const ExploreOurProducts = () => {
   const productItems = [
@@ -93,6 +94,10 @@ const ExploreOurProducts = () => {
             reviews={item.reviews}
           />
         ))}
+      </div>
+
+      <div className="flex items-center justify-center mt-10">
+        <Button text="View All Products" />
       </div>
     </div>
   );

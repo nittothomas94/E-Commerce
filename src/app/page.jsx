@@ -8,6 +8,9 @@ import ProductCardHome from './components/user/ProductCardHome/ProductCardHome.j
 import BrowseByCategory from './components/user/BrowseByCategory/BrowseByCategory.jsx';
 import BestSellingProducts from './components/user/BestSellingProducts/BestSellingProducts.jsx';
 import ExploreOurProducts from './components/ExploreOurProducts/ExploreOurProducts.jsx';
+import NewArrival from './components/user/NewArrival/page.jsx';
+import FreeAndFastDelevery from './components/user/Common/FreeAndFastDelevery.jsx';
+
 export default function Home() {
   return (
     <div className="bg-white text-black lg:flex lg:flex-col lg:items-center">
@@ -28,8 +31,8 @@ export default function Home() {
 
         {/* section 2 */}
 
-        {/* <FlashSales /> */}
-        <h1>Flash sale</h1>
+        <FlashSales />
+        {/* <h1>Flash sale</h1> */}
 
         {/* Browse By Category */}
 
@@ -44,7 +47,7 @@ export default function Home() {
         <div className="min-h-20 w-full">
           <img
             src="/images/home/Enhance-Your-Music-Experience.png"
-            alt=""
+            alt="image"
             className="w-full"
           />
         </div>
@@ -54,6 +57,12 @@ export default function Home() {
         <ExploreOurProducts />
 
         {/* New Arrival */}
+
+        <NewArrival />
+
+        {/*Last Section  */}
+
+        <FreeAndFastDelevery />
       </div>
       <Footer />
     </div>

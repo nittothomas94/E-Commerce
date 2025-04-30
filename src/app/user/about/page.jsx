@@ -1,5 +1,5 @@
 import FoundersCarousel from '@/app/components/user/FoundersCarousel.jsx/FoundersCarousel';
-
+import FreeAndFastDelevery from '@/app/components/user/Common/FreeAndFastDelevery';
 const About = () => {
   const array = [
     {
@@ -24,28 +24,9 @@ const About = () => {
     },
   ];
 
-  const array2 = [
-    {
-      image: '/images/about/shopping-vehle.png',
-      headding: 'FREE AND FAST DELIVERY',
-      body: 'Free delivery for all orders over $140',
-    },
-    {
-      image: '/images/about/headset.png',
-      headding: '24/7 CUSTOMER SERVICE',
-      body: 'Friendly 24/7 customer support',
-    },
-    {
-      image: '/images/about/security.png',
-      headding: 'MONEY BACK GUARANTEE',
-      body: 'We return money within 30 days',
-    },
-  ];
-
   return (
-    <div className="flex flex-col gap-10 py-5 sm:px-3 bg-white text-black">
-      {/* Breadcrumb */}
-      <p className="w-full lg:mx-[3%] max-w-[1200px] mx-auto px-2">
+    <div className="flex flex-col gap-20 py-5 sm:px-3 bg-white text-black 2xl:items-center">
+      <p className="w-full lg:mx-[3%] 2xl:w-[1200px] px-2">
         <span className="text-gray-500">Home / </span> About
       </p>
 
@@ -79,11 +60,11 @@ const About = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="w-full lg:mx-[3%] max-w-[1200px] mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center px-2">
+      <section className="w-full 2xl:w-[1200px] mx-auto grid grid-cols-2 mt-10 sm:grid-cols-2 md:grid-cols-4 lg:gap-35 lg:justify-between lg:px-10">
         {array.map((item, index) => (
           <div
             key={index}
-            className="shadow-xl rounded-[10px] w-[190px] h-[180px] flex flex-col items-center justify-center hover:bg-red-600 hover:text-white cursor-pointer transition"
+            className="border border-gray-300 rounded-[5px] w-[190px] h-[180px] flex flex-col items-center justify-center hover:bg-red-600 hover:text-white cursor-pointer transition"
           >
             <img src={item.image} alt="icon" className="size-16 mb-2" />
             <h1 className="text-xl font-bold">{item.headding}</h1>
@@ -93,27 +74,13 @@ const About = () => {
       </section>
 
       {/* Founders Carousel */}
-      <section className="w-full lg:mx-[3%] max-w-[1200px] mx-auto px-2">
+      <section className="w-full 2xl:max-w-[1200px] mx-auto px-2">
         <FoundersCarousel />
       </section>
 
-      {/* Features Section */}
-      <section className="w-full lg:mx-[3%] max-w-[1200px] mx-auto flex flex-wrap justify-center lg:justify-between gap-6 px-2 mb-20">
-        {array2.map((item, index) => (
-          <div
-            key={index}
-            className="w-[190px] h-[180px] rounded-[10px] shadow-md flex flex-col justify-center items-center text-center px-4 hover:bg-red-600 hover:text-white transition"
-          >
-            <img
-              src={item.image}
-              alt={item.headding}
-              className="w-12 h-12 mb-2"
-            />
-            <h2 className="text-base font-semibold">{item.headding}</h2>
-            <p className="text-sm">{item.body}</p>
-          </div>
-        ))}
-      </section>
+      {/* last sectiom */}
+
+      <FreeAndFastDelevery />
     </div>
   );
 };
