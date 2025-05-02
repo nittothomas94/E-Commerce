@@ -6,9 +6,13 @@ const ProductCard = ({
   actualPrice = '1000',
   image = '/images/common/no-image.jpg',
   reviews = '66',
+  onClick,
 }) => {
   return (
-    <div className="group h-75 sm:w-54 flex flex-col justify-center gap-2 mb-2 px-2 hover:shadow-md cursor-pointer">
+    <div
+      className="group h-75 sm:w-54 flex flex-col justify-center gap-2 mb-2 px-2 hover:shadow-md cursor-pointer"
+      onClick={onClick}
+    >
       {/* Image and icons */}
       <div
         className="h-40 bg-contain bg-no-repeat bg-center relative bg-gray-200 min-w-50"

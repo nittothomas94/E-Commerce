@@ -1,6 +1,9 @@
+'use client';
+
 import ProductCard from '../ProductCard/ProductCard';
 import Timer from '../Timer/timer';
 import Arrow from '../Common/Arrow';
+import { useRouter } from 'next/navigation';
 const BestSellingProducts = () => {
   const productItems = [
     {
@@ -37,6 +40,11 @@ const BestSellingProducts = () => {
     },
   ];
 
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/user/productdetails');
+  };
   return (
     <div className="w-full pt-6 lg:pb-20 flex flex-col gap-5">
       <div className="flex gap-3 h-10 items-center">
@@ -68,6 +76,7 @@ const BestSellingProducts = () => {
               price={item.price}
               actualPrice={item.oldPrice}
               reviews={item.reviews}
+              onClick={handleClick}
             />
           );
         })}
